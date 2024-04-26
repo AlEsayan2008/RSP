@@ -44,9 +44,6 @@ def play_rsp():
                     print(f"You lose. Computer choice is {computer}")
             else:
                 print("Wrong Choice !!!")
-        elif command().lower() == "end":
-            print("Exiting out of code.")
-            break    
         else:
             print("Command Error !!!")
 
