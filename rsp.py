@@ -6,7 +6,7 @@ import logging
 
 def read_json(source: str):   
     try:
-        with open(source, "r", encoding="utf-8") as read_file:
+        with open(source , "r", encoding="utf-8") as read_file:
             data = json.load(read_file)
         return data
     except FileNotFoundError:
@@ -44,6 +44,9 @@ def play_rsp():
                     print(f"You lose. Computer choice is {computer}")
             else:
                 print("Wrong Choice !!!")
+        elif command().lower() == "end":
+            print("Exiting out of code.")
+            break    
         else:
             print("Command Error !!!")
 
